@@ -1,0 +1,19 @@
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/auth
+Content-Type: application/json
+
+{
+    "email": "asterjoules@gmail.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:3000/profile
+Content-Type: application/json
+
+{
+     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzdGVyam91bGVzQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoicGFzc3dvcmQiLCJpYXQiOjE2ODI2ODg2ODIsImV4cCI6MTY4MjY4ODY4N30.Ezj7vfzmxCXPxP346ve4SNB9kt1TUtf4BPP2ZxGvOjg"
+}
